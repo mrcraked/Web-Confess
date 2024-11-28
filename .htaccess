@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteRule ^$ http://localhost:3001/ [P]
+# Optional: Proxy pass-through for all other routes
+RewriteRule ^(.*)$ http://localhost:3001/$1 [P]
+# Configure Proxy settings
+<IfModule mod_proxy.c>
+    ProxyPass / http://localhost:3001/
+    ProxyPassReverse / http://localhost:3001/
+</IfModule>
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/noryouho/eks-confes"
+PassengerBaseURI "/"
+PassengerNodejs "/home/noryouho/nodevenv/eks-confes/18/bin/node"
+PassengerAppType node
+PassengerStartupFile app.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
