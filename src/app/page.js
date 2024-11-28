@@ -7,7 +7,7 @@ export default function CrushConfession() {
 
   const handleAccept = async () => {
     try {
-      const response = await fetch('http://api.noryouhost.online/accept.php', { 
+      const response = await fetch('https://api.noryouhost.online/accept.php', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ export default function CrushConfession() {
 
   const handleDeny = async () => {
     try {
-      await fetch('http://api.noryouhost.online/deny.php', { 
+      await fetch('https://api.noryouhost.online/deny.php', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
