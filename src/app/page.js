@@ -111,10 +111,10 @@ export default function CrushConfession() {
             className="text-center p-8 bg-white rounded-xl shadow-lg"
           >
             <h2 className="text-3xl font-bold text-green-600 mb-6">
-              Really? Don't you already deny it?
+              Really?
             </h2>
             <p className="text-xl text-gray-700">
-             only sunday will understand you 😉
+            Chat the sender again
             </p>
           </motion.div>
         )}
