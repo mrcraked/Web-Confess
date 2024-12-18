@@ -1,8 +1,11 @@
 # Esx-confess
 A web powered by nextjs to use for you to confess to someone! 
+
 if the person denied it you can direct them to the web you want!
+
 youtube, jumpscare, or some other web you make.!
 
+just modify the page.js in the /app
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
  
 ## Getting Started
